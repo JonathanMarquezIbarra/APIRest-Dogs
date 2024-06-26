@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">APIRest</string>
+    <string name="title_text">Buscador de fotografías de perros</string>
 </resources>
