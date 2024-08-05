@@ -28,7 +28,7 @@
         app:layout_constraintTop_toBottomOf="@id/tvTitle"
         android:layout_marginTop="16dp"
         android:searchIcon="@drawable/pet_icon"
-        android:queryHint="Introduzca la raza a buscar..."
+        android:queryHint="@string/searchview_hint"
         app:layout_constraintVertical_bias="0"/>
 
     <androidx.recyclerview.widget.RecyclerView
