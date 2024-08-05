@@ -9,11 +9,9 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.apirest.databinding.ActivityMainBinding
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.launch
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import java.util.Locale
 
 
 class MainActivity : AppCompatActivity(), OnQueryTextListener, SearchView.OnQueryTextListener {
@@ -64,11 +62,11 @@ class MainActivity : AppCompatActivity(), OnQueryTextListener, SearchView.OnQuer
     }
 
     private fun showError() {
-        Toast.makeText(this,"Ha ocurrido un error",Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "Ha ocurrido un error", Toast.LENGTH_SHORT).show()
     }
 
     override fun onQueryTextSubmit(query: String?): Boolean {
-        if(!query.isNullOrEmpty()){
+        if (!query.isNullOrEmpty()) {
             searchByName(query.lowercase())
         }
         return true
